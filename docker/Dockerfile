@@ -6,7 +6,7 @@ RUN pip install multiqc
 # create a non-root user
 RUN useradd -ms /bin/bash bioinfo
 WORKDIR /home/bioinfo/tax
-COPY raw_data .
+COPY raw_data raw_data
 COPY metadata.txt .
 # setup the user directory
 RUN chown -R bioinfo:bioinfo /home/bioinfo

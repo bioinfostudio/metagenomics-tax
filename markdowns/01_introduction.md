@@ -25,6 +25,7 @@ The tutorial dataset was originally used in a project to determine whether knock
 This workflow assumes that you have QIIME 2 (version 2020.2) installed in a conda environment and that you also have [FASTQC][15] and [MultiQC][16] installed in this environment.
 
 This workflow also assumes that the input is raw paired-end MiSeq data in demultiplexed FASTQ format located within a folder called `raw_data`. The filenames are expected to look like this: `105CHE6WT_S325_L001_R1_001.fastq.gz`, where each field separated by an `_` character corresponds to:
+
 1. The sample name (_105CHE6WT_)
 2. The sample number on the run (_S325_)
 3. The lane number (_L001_)
@@ -55,7 +56,7 @@ SampleID       BarcodeSequence LinkerPrimerSequence    FileInput       Source  M
 ```
 
 !!! note "Note"
-The Barcode and LinkerPrimerSequence are absent for this tutorial, these would be used for assigning multiplexed reads to samples and for quality control. Our tutorial data set is already de-multiplexed. What QIIME could be used? 
+    The Barcode and LinkerPrimerSequence are absent for this tutorial, these would be used for assigning multiplexed reads to samples and for quality control. Our tutorial data set is already de-multiplexed. What QIIME could be used? 
  
 
 ### 1.2 Set number of cores

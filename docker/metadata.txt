@@ -1,0 +1,25 @@
+#SampleID	BarcodeSequence	LinkerPrimerSequence	FileInput	Source	Mouse#	Cage#	genotype	SamplingWeek
+105CHE6WT			105CHE6WT_S325_L001.assembled_filtered.nonchimera.fasta	BZ	BZ25	7	WT	wk6
+106CHE6WT			106CHE6WT_S336_L001.assembled_filtered.nonchimera.fasta	BZ	BZ26	7	WT	wk6
+107CHE6KO			107CHE6KO_S347_L001.assembled_filtered.nonchimera.fasta	BZ	BZ27	7	chemerin_KO	wk6
+108CHE6KO			108CHE6KO_S358_L001.assembled_filtered.nonchimera.fasta	BZ	BZ28	7	chemerin_KO	wk6
+109CHE6WT			109CHE6WT_S369_L001.assembled_filtered.nonchimera.fasta	BZ	BZ29	8	WT	wk6
+110CHE6WT			110CHE6WT_S292_L001.assembled_filtered.nonchimera.fasta	BZ	BZ30	8	WT	wk6
+111CHE6KO			111CHE6KO_S303_L001.assembled_filtered.nonchimera.fasta	BZ	BZ31	8	chemerin_KO	wk6
+112CHE6KO			112CHE6KO_S314_L001.assembled_filtered.nonchimera.fasta	BZ	BZ32	8	chemerin_KO	wk6
+113CHE6WT			113CHE6WT_S326_L001.assembled_filtered.nonchimera.fasta	BZ	BZ33	9	WT	wk6
+114CHE6WT			114CHE6WT_S337_L001.assembled_filtered.nonchimera.fasta	BZ	BZ34	9	WT	wk6
+115CHE6KO			115CHE6KO_S348_L001.assembled_filtered.nonchimera.fasta	BZ	BZ35	9	chemerin_KO	wk6
+116CHE6KO			116CHE6KO_S359_L001.assembled_filtered.nonchimera.fasta	BZ	BZ36	9	chemerin_KO	wk6
+35CMK6KO			35CMK6KO_S246_L001.assembled_filtered.nonchimera.fasta	CJS	35	E2	CMKLR1_KO	wk6
+75CMK8KO			75CMK8KO_S251_L001.assembled_filtered.nonchimera.fasta	CJS	35	E2	CMKLR1_KO	wk8
+36CMK6WT			36CMK6WT_S258_L001.assembled_filtered.nonchimera.fasta	CJS	36	E2	WT	wk6
+76CMK8WT			76CMK8WT_S263_L001.assembled_filtered.nonchimera.fasta	CJS	36	E2	WT	wk8
+37CMK6WT			37CMK6WT_S270_L001.assembled_filtered.nonchimera.fasta	CJS	37	E3	WT	wk6
+77CMK8WT			77CMK8WT_S275_L001.assembled_filtered.nonchimera.fasta	CJS	37	E3	WT	wk8
+38CMK6KO			38CMK6KO_S282_L001.assembled_filtered.nonchimera.fasta	CJS	38	E3	CMKLR1_KO	wk6
+78CMK8KO			78CMK8KO_S287_L001.assembled_filtered.nonchimera.fasta	CJS	38	E3	CMKLR1_KO	wk8
+39CMK6KO			39CMK6KO_S199_L001.assembled_filtered.nonchimera.fasta	CJS	39	E3	CMKLR1_KO	wk6
+79CMK8KO			79CMK8KO_S204_L001.assembled_filtered.nonchimera.fasta	CJS	39	E3	CMKLR1_KO	wk8
+40CMK6WT			40CMK6WT_S211_L001.assembled_filtered.nonchimera.fasta	CJS	40	E3	WT	wk6
+80CMK8WT			80CMK8WT_S216_L001.assembled_filtered.nonchimera.fasta	CJS	40	E3	WT	wk8

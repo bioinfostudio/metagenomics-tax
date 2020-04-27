@@ -1,0 +1,24 @@
+chunks:
+
+-
+    title: "Welcome to Metagenomics Taxonomic"
+    id: welcome
+    rules:
+    -
+        weight: 100
+
+    -
+        weight: 0
+
+    content: |
+
+        # Metagenomics Taxonomic
+
+        In this tutorial we will look at the open source software package QIIME (pronounced ’chime’). QIIME stands for Quantitative Insights Into Microbial Ecology. The package contains many tools that enable users to analyse and compare microbial communities. 
+        After completion of this tutorial, you should be able to perform a taxonomic analysis on a Illumina pair end 16S rRNA amplicon dataset. In addition you should be able to do 16S rRNA taxonomic analysis on shotgun data using the tool rRNASelector in combination with QIIME and other third party tools.
+
+        -   Understand the open source software package QIIME for analysis
+        -   Perform a taxonomic analysis on a 16S rRNA amplicon dataset
+        -   Conduct 16S taxonomic analysis on shotgun data
+
+        <i class="fab fa-creative-commons"></i> / by BPA and CSIRO

@@ -1,1 +1,1 @@
-# metagenomics-qc
+# metagenomics-tax

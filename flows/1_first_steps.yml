@@ -63,3 +63,11 @@ groups:
         prompt: |
 
             {% include "markdowns/04_join_pe_reads.md" %}
+    -
+        type: TerminalQuestion
+        id: filter
+        cid: join-paired
+        title: Filter out low-quality reads
+        prompt: |
+
+            {% include "markdowns/05_filter_low_qual_reads.md" %}

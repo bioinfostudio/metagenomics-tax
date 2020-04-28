@@ -1,7 +1,6 @@
-FROM gcr.io/wise-cycling-267806/tax
+FROM gcr.io/wise-cycling-267806/trim-paired
 USER root
-COPY fastqc_out fastqc_out
-COPY reads_qza reads_qza
+COPY reads_joined.qza reads_qza
 RUN chown -R bioinfo:bioinfo /home/bioinfo
 # become the bioinfo
 USER bioinfo

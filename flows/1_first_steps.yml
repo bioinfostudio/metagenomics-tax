@@ -55,3 +55,11 @@ groups:
         prompt: |
 
             {% include "markdowns/03_trim_primers.md" %}
+    -
+        type: TerminalQuestion
+        id: vsearch
+        cid: trim-paired 
+        title: Join paired-end reads
+        prompt: |
+
+            {% include "markdowns/04_join_pe_reads.md" %}

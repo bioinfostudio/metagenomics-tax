@@ -39,3 +39,11 @@ groups:
         prompt: |
 
             {% include "markdowns/01_introduction.md" %}
+    -
+        type: TerminalQuestion
+        id: inspect
+        cid: multiqc
+        title: Inspect read quality
+        prompt: |
+
+            {% include "markdowns/02_inspect_read_quality.md" %}

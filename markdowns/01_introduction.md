@@ -1,24 +1,9 @@
 ## Introduction
 
-### De novo OTU picking and diversity analysis using Illumina data
-
-The workflow for 16S analysis in general is as follows:
-
-1. Split multiplexed reads to samples
-2. Join overlapping read pairs
-4. Filter reads on quality and length
-5. Filter Chimera sequences
-6. Assign reads to samples
-7. Pick operational taxonomic units (OTUs) for each sample
-8. Alpha diversity analysis and rarefaction
-9. Beta diversity analysis and Taxonomic composition
-10. PCA analysis
- 
-
 16S analysis is a method of microbiome analysis (compared to shotgun metagenomics) that targets the 16S ribosomal RNA gene, as this gene is present in all prokaryotes. It features regions that are conserved among these organisms, as well as variable regions that allow distinction among organisms. These characteristics make this gene useful for analyzing microbial communities at reduced cost compared to metagenomic techniques. A similar workflow can be applied to eukaryotic micro-organisms using the 18S rRNA gene.
 
-
 The tutorial dataset was originally used in a project to determine whether knocking out the protein chemerin affects gut microbial composition. Originally 116 mouse samples acquired from two different facilities were used for this project (only 24 samples were used in this tutorial dataset, for simplicity). 
+
 
 ## Requirements
 
@@ -33,6 +18,7 @@ This workflow also assumes that the input is raw paired-end MiSeq data in demult
 5. The set number (_001_)
 
 Often you will need to re-name your files to match this syntax. However, QIIME 2 accepts many different formats so if your files are not already in this format (e.g. not demultiplexed) you would just need to use slightly different commands for importing your data.
+
 
 ### 1.1 Format metadata file
 
@@ -61,7 +47,7 @@ SampleID       BarcodeSequence LinkerPrimerSequence    FileInput       Source  M
 
 ### 1.2 Set number of cores
 
-Several commands throughout this workflow can run on multiple cores in parallel. How many cores to use in these cases will be saved to the `NCORES` variable defined below. We set this variable to 1 below, but you can change this to be however many cores you would like to use.
+Several commands throughout this workflow can run on multiple cores in parallel. How many cores to use in these cases will be saved to the `NCORES` variable defined below. We set this variable to 1 below.
 
 ```
 NCORES=1

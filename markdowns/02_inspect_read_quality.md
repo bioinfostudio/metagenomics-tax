@@ -1,6 +1,6 @@
 ### 1.3 Inspect read quality
 
-Visualize sequence quality across raw reads. This is important as a sanity check that your reads are of reasonable quality and to determine how your reads should be trimmed in downstream steps. QIIME 2 comes with a plugin for visualizing read quality, which we will use at a later step. However, when dealing with raw reads the easiest method to use is a combination of [FASTQC][15] and [MultiQC][16]. Note that these tools are not packaged with QIIME 2 so you will need to install them separately.
+Visualize sequence quality across raw reads. This is important as a sanity check that your reads are of reasonable quality and to determine how your reads should be trimmed in downstream steps. QIIME 2 comes with a plugin for visualizing read quality, which we will use at a later step. However, when dealing with raw reads the easiest method to use is a combination of [FASTQC][15] and [MultiQC][16]. Note that these tools are not packaged with QIIME 2.
 
 This is an important step for identifying outlier samples with especially low quality, read sizes, read depth, and other metrics.
 

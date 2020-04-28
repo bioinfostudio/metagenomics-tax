@@ -47,3 +47,11 @@ groups:
         prompt: |
 
             {% include "markdowns/02_inspect_read_quality.md" %}
+    -
+        type: TerminalQuestion
+        id: trim
+        cid: multiqc
+        title: Trim primers with cutadapt
+        prompt: |
+
+            {% include "markdowns/03_trim_primers.md" %}

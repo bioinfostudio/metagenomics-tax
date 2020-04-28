@@ -71,3 +71,11 @@ groups:
         prompt: |
 
             {% include "markdowns/05_filter_low_qual_reads.md" %}
+    -
+        type: TerminalQuestion
+        id: deblur
+        cid: quality-filter
+        title: Running deblur 
+        prompt: |
+
+            {% include "markdowns/06_running_deblur.md" %}

@@ -19,7 +19,7 @@ cd fastqc_out
 multiqc .
 ```
 
-The full report is found within [multiqc_report.html](repo:results/multiqc_report.html) in the FASTQC output directory. The most important reason to visualize this report is to ensure that your samples are of high-quality (based largely on whether the per-base quality is >30 across most of the reads) and that there are no outlier samples.
+The full report is found within [multiqc_report.html](repo:results/multiqc_report.html){:target="_blank"} in the FASTQC output directory. The most important reason to visualize this report is to ensure that your samples are of high-quality (based largely on whether the per-base quality is >30 across most of the reads) and that there are no outlier samples.
  
 
 ### 1.5 Import FASTQs as QIIME 2 artifact

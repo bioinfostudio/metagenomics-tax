@@ -42,7 +42,7 @@ groups:
     -
         type: TerminalQuestion
         id: inspect
-        cid: multiqc
+        cid: tax
         title: Inspect read quality
         prompt: |
 

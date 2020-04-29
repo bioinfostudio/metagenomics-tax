@@ -5,7 +5,7 @@ You can run the taxonomic classification with this command, which is one of the 
 ```bash
 qiime feature-classifier classify-sklearn \
    --i-reads deblur_output/representative_sequences.qza \
-   --i-classifier /home/shared/taxa_classifiers/qiime2-2020.2_classifiers/classifier_silva_132_99_16S.qza \
+   --i-classifier /home/bioinfo/tax/taxa_classifiers/qiime2-2020.2_classifiers/classifier_silva_132_99_16S.qza \
    --p-n-jobs $NCORES \
    --output-dir taxa
 ```

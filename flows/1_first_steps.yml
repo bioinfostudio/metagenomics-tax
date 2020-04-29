@@ -98,7 +98,7 @@ groups:
     -
         type: TerminalQuestion
         id: classification 
-        cid: deblur-output 
+        cid: silva
         title: Run taxonomic classification
         prompt: |
 

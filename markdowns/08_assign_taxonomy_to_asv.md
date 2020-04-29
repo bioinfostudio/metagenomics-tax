@@ -15,7 +15,7 @@ The custom classifiers available include ([see download][18] and [commands used 
 - 16S V6/V8 region (```classifier_silva_132_99_16S_V6.V8_B969F_BA1406R.qza```)
 - 16S V6/V8 region targeting archaea (```classifier_silva_132_99_16S_V6.V8_A956F_A1401R.qza```)
 - 16S V3/V4 region targeting cyanobacteria (```classifier_silva_132_99_16S_V3.V4_CYA359F_CYA781R.qza```)
-- 18S V4 region (```classifier_silva_132_99_18S_V4_E572F_E1009R.qza```)
+- 18S V4 region (```classifier_silva_132_99_18S.qza```)
 - Full ITS - fungi only (```classifier_sh_refs_qiime_ver8_99_s_02.02.2019_ITS.qza```)
 - Full ITS - all eukaryotes (```classifier_sh_refs_qiime_ver8_99_s_all_02.02.2019_ITS.qza```)
 

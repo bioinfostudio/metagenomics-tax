@@ -81,7 +81,7 @@ groups:
             {% include "markdowns/06_running_deblur.md" %}
     -
         type: TerminalQuestion
-        id: deblur
+        id: debluroutput
         cid: deblur 
         title: Summarizing deblur output
         prompt: |

@@ -20,6 +20,25 @@ The custom classifiers available include ([see download][18] and [commands used 
 - Full ITS - all eukaryotes (```classifier_sh_refs_qiime_ver8_99_s_all_02.02.2019_ITS.qza```)
 
 
+### 3.2 Run taxonomic classification
+
+You can run the taxonomic classification with this command, which is one of the longest running and most memory-intensive command of the SOP. If you receive an error related to insufficient memory (and if you cannot increase your memory usage) then you can look into the `--p-reads-per-batch` option and set this to be lower than the default (which is dynamic depending on sample depth and the number of threads) and also try running the command with fewer jobs (e.g. set `--p-n-jobs 1`).
+
+```bash
+qiime feature-classifier classify-sklearn \
+   --i-reads deblur_output/representative_sequences.qza \
+   --i-classifier /home/bioinfo/tax/taxa_classifiers/qiime2-2020.2_classifiers/classifier_silva_132_99_16S.qza \
+   --p-n-jobs $NCORES \
+   --output-dir taxa
+```
+
+As with all QZA files, you can export the output file to take a look at the classifications and confidence scores:
+
+```bash
+qiime tools export \
+   --input-path taxa/classification.qza --output-path taxa
+```
+
 [10]: http://scikit-learn.org/stable/
 [11]: https://www.arb-silva.de/
 [18]: http://kronos.pharmacology.dal.ca/public_files/taxa_classifiers/qiime2-2020.2_classifiers

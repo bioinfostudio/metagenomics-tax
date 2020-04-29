@@ -90,19 +90,11 @@ groups:
     -
         type: TerminalQuestion
         id: classifier
-        cid: deblur-output 
+        cid: silva 
         title: Build or acquire taxonomic classifier
         prompt: |
 
             {% include "markdowns/08_assign_taxonomy_to_asv.md" %}
-    -
-        type: TerminalQuestion
-        id: classification 
-        cid: silva
-        title: Run taxonomic classification
-        prompt: |
-
-            {% include "markdowns/09_run_taxonomic_classification.md" %}
     -
         type: TerminalQuestion
         id: blast
@@ -111,3 +103,11 @@ groups:
         prompt: |
 
             {% include "markdowns/10_assess_tax_assignments.md" %}
+    -
+        type: TerminalQuestion
+        id: filtering
+        cid: tabulate 
+        title: Filter out rare ASVs
+        prompt: |
+
+            {% include "markdowns/11_filtering_resultant_table.md" %}

@@ -1,6 +1,8 @@
 FROM gcr.io/wise-cycling-267806/deblur-output
 USER root
+COPY deblur_table_summary.qzv deblur_output
 RUN ln -s /mnt/genome/taxa_classifiers /home/bioinfo/tax/taxa_classifiers
+COPY classification.qza taxa
 RUN chown -R bioinfo:bioinfo /home/bioinfo
 # become the bioinfo
 USER bioinfo

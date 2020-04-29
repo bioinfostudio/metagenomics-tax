@@ -95,3 +95,11 @@ groups:
         prompt: |
 
             {% include "markdowns/08_assign_taxonomy_to_asv.md" %}
+    -
+        type: TerminalQuestion
+        id: classification 
+        cid: deblur-output 
+        title: Run taxonomic classification
+        prompt: |
+
+            {% include "markdowns/09_run_taxonomic_classification.md" %}

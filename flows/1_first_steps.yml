@@ -103,3 +103,11 @@ groups:
         prompt: |
 
             {% include "markdowns/09_run_taxonomic_classification.md" %}
+    -
+        type: TerminalQuestion
+        id: blast
+        cid: classification
+        title: Assess subset of taxonomic assignments with BLAST
+        prompt: |
+
+            {% include "markdowns/10_assess_tax_assignments.md" %}

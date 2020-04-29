@@ -9,14 +9,15 @@ This approach requires that a classifier be trained in advance on a reference da
 If you would like to try our custom 16S classifiers or require a non-16S classifier you can see the below list of classifiers. Below we will describe these classifiers, but if your primer set is not there you should check what classifiers are available on the [QIIME 2 website][27]. In addition, **it is especially important to manually check the taxonomic assignment of ASVs when using these custom classifiers to double-check that they performed properly on your dataset.** In addition, although theoretically the assignments can be improved by using primer-specific classifiers, we recommend the full-length 16S classifier be run as well whenever you are running a custom 16S classifier for the first time or on a new environment.
 
 The custom classifiers available include ([see download][18] and [commands used to create these files](https://github.com/LangilleLab/microbiome_helper/wiki/Creating-QIIME-2-Taxonomic-Classifiers)):
-* 16S V4/V5 region (```classifier_silva_132_99_16S_V4.V5_515F_926R.qza```)
-* 16S V3/V4 region (```classifier_silva_132_99_16S_V3.V4_341F_805R.qza```)
-* 16S V6/V8 region (```classifier_silva_132_99_16S_V6.V8_B969F_BA1406R.qza```)
-* 16S V6/V8 region targeting archaea (```classifier_silva_132_99_16S_V6.V8_A956F_A1401R.qza```)
-* 16S V3/V4 region targeting cyanobacteria (```classifier_silva_132_99_16S_V3.V4_CYA359F_CYA781R.qza```)
-* 18S V4 region (```classifier_silva_132_99_18S_V4_E572F_E1009R.qza```)
-* Full ITS - fungi only (```classifier_sh_refs_qiime_ver8_99_s_02.02.2019_ITS.qza```)
-* Full ITS - all eukaryotes (```classifier_sh_refs_qiime_ver8_99_s_all_02.02.2019_ITS.qza```)
+
+- 16S V4/V5 region (```classifier_silva_132_99_16S_V4.V5_515F_926R.qza```)
+- 16S V3/V4 region (```classifier_silva_132_99_16S_V3.V4_341F_805R.qza```)
+- 16S V6/V8 region (```classifier_silva_132_99_16S_V6.V8_B969F_BA1406R.qza```)
+- 16S V6/V8 region targeting archaea (```classifier_silva_132_99_16S_V6.V8_A956F_A1401R.qza```)
+- 16S V3/V4 region targeting cyanobacteria (```classifier_silva_132_99_16S_V3.V4_CYA359F_CYA781R.qza```)
+- 18S V4 region (```classifier_silva_132_99_18S_V4_E572F_E1009R.qza```)
+- Full ITS - fungi only (```classifier_sh_refs_qiime_ver8_99_s_02.02.2019_ITS.qza```)
+- Full ITS - all eukaryotes (```classifier_sh_refs_qiime_ver8_99_s_all_02.02.2019_ITS.qza```)
 
 
 [10]: http://scikit-learn.org/stable/

@@ -87,3 +87,11 @@ groups:
         prompt: |
 
             {% include "markdowns/07_deblur_output.md" %}
+    -
+        type: TerminalQuestion
+        id: classifier
+        cid: deblur-output 
+        title: Build or acquire taxonomic classifier
+        prompt: |
+
+            {% include "markdowns/08_assign_taxonomy_to_asv.md" %}

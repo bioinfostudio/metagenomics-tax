@@ -41,7 +41,7 @@ When running 18S and ITS data with deblur you will need to specify custom refere
 
     For the **ITS version** (note the first command imports the deblur database and only needs to be run once on your system):
    
-    ```
+    ```bash
     qiime tools import \
        --input-path /home/bioinfo/tax/rRNA_db/UNITE_sh_refs_qiime_ver8_99_s_all_02.02.2019.fasta \
        --output-path /home/bioinfo/tax/rRNA_db/UNITE_sh_refs_qiime_ver8_99_s_all_02.02.2019.qza \

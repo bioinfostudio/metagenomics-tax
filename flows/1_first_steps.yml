@@ -79,3 +79,11 @@ groups:
         prompt: |
 
             {% include "markdowns/06_running_deblur.md" %}
+    -
+        type: TerminalQuestion
+        id: deblur
+        cid: deblur 
+        title: Summarizing deblur output
+        prompt: |
+
+            {% include "markdowns/07_deblur_output.md" %}

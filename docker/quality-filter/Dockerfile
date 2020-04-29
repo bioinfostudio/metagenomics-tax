@@ -1,5 +1,6 @@
 FROM gcr.io/wise-cycling-267806/join-paired
 USER root
+COPY rRNA_db rRNA_db
 COPY reads_qza/reads_trimmed_joined_filt.qza reads_qza
 COPY reads_qza/reads_trimmed_joined_filt_summary.qzv reads_qza
 RUN chown -R bioinfo:bioinfo /home/bioinfo

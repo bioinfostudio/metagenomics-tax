@@ -111,3 +111,11 @@ groups:
         prompt: |
 
             {% include "markdowns/11_filtering_resultant_table.md" %}
+    -
+        type: TerminalQuestion
+        id: contam
+        cid: table-filt
+        title: Filter out contaminant and unclassified ASVs
+        prompt: |
+
+            {% include "markdowns/12_filter_out_contaminant.md" %}

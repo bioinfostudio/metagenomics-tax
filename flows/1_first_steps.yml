@@ -127,3 +127,11 @@ groups:
         prompt: |
 
             {% include "markdowns/13_exclude_low_depth_samples.md" %}
+    -
+        type: TerminalQuestion
+        id: summarize
+        cid: filter-samples
+        title: Subset and summarize filtered table
+        prompt: |
+
+            {% include "markdowns/14_summarize_filtered_table.md" %}

@@ -119,3 +119,11 @@ groups:
         prompt: |
 
             {% include "markdowns/12_filter_out_contaminant.md" %}
+    -
+        type: TerminalQuestion
+        id: LowDepth 
+        cid: contaminant 
+        title: Exclude low-depth samples
+        prompt: |
+
+            {% include "markdowns/13_exclude_low_depth_samples.md" %}

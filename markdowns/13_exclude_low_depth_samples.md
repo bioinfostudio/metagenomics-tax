@@ -3,6 +3,7 @@
 Often certain samples will have quite low depth after these filtering steps, which can be excluded from downstream analyses since they will largely add noise. There is no single cut-off that works best for all datasets, but researchers often use minimum cut-offs within the range of 1000 to 4000 reads. You can also use a cut-off much lower than this if you want to retain all samples except those that failed entirely (e.g. depth < 50 reads). Ideally you would choose this cut-off after visualizing rarefaction curves to determine at what read depth the richness of your samples plateaus and choose a cut-off as close to this plateau as possible while retaining sufficient sample size for your analyses.
 
 To perform this rarefaction curve analysis you would first need to summarize the filtered table we produced in the last step:
+
 ```
 qiime feature-table summarize \
    --i-table deblur_output/deblur_table_filt_contam.qza \

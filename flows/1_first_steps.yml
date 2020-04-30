@@ -135,3 +135,11 @@ groups:
         prompt: |
 
             {% include "markdowns/14_summarize_filtered_table.md" %}
+    -
+        type: TerminalQuestion
+        id: sepp
+        cid: table-final
+        title: Build tree with SEPP QIIME 2 plugin
+        prompt: |
+
+            {% include "markdowns/15_build_tree_with_sepp.md" %}

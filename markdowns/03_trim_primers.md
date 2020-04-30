@@ -51,7 +51,7 @@ qiime demux summarize \
    --o-visualization reads_qza/reads_trimmed_summary.qzv
 ```
 
-Note that we gave the output file above the extension `.qzv` since this a special type of artifact file - a **visualization**. You can look at the visualization by uploading [reads_trimmed_summary.qzv](repo:results/reads_trimmed_summary.qzv){:target="_blank"} to the [QIIME2 view website][3] and clicking on the `Interactive Quality Plot` tab at the top of the page
+Note that we gave the output file above the extension `.qzv` since this a special type of artifact file - a **visualization**. You can look at the visualization file [reads_trimmed_summary.qzv](https://view.qiime2.org/?src=https://storage.googleapis.com/bioinfostudio/tax/results/reads_trimmed_summary.qzv){:target="_blank"} on the [QIIME2 view website][3] and clicking on the `Interactive Quality Plot` tab at the top of the page
 
 [3]: https://view.qiime2.org/
 [4]: http://cutadapt.readthedocs.io/en/stable/guide.html

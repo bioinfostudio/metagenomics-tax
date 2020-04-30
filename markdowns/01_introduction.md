@@ -27,7 +27,7 @@ You can format the metadata file (which is in a compatible format to the QIIME 1
 This can be done like so (for example if your file is called `metadata.txt` and is found in the folder `/home/bioinfo`):
 
 ```
-METADATA="/home/bioinfo/metadata.txt"
+METADATA="/home/bioinfo/tax/metadata.txt"
 ```
 
 The first column is the sample IDs, the next 2 are blank (note the file is tab-delimited, meaning each column is separated by a tab, not just whitespace) and the 4th column contains FASTA filenames (these filenames are based on what we will produce in this pipeline). The rest of the columns are metadata about the samples.

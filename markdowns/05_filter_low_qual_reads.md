@@ -9,7 +9,7 @@ qiime quality-filter q-score-joined \
    --o-filtered-sequences reads_qza/reads_trimmed_joined_filt.qza
 ```
 
-It is a good idea at this point just to verify that there haven't been any substantial losses of reads, before going through the whole ASV process, at either the joining or quality-filtering steps above:
+It is a good idea at this point just to verify that there haven't been any substantial losses of reads, before going through the whole ASV process, at either the joining or quality-filtering steps:
 
 ```bash
 qiime demux summarize \

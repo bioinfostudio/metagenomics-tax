@@ -2,12 +2,12 @@
 
 Run the [deblur][5] workflow to correct reads and get amplicon sequence variants (ASVs). Note that the below command will retain singletons, which would have been filtered out unless we set ```--p-min-reads 1```, and is for 16S sequences only. For other amplicon regions, you can either use the ```denoise-other``` option in the command and specify a reference database of sequences to use for positive filtering (as in the below versions for 18S and ITS) or use DADA2 as described below (the former still being preferred due to speed considerations).
 
-Note that you will need to trim all sequences to the same length with the ```--p-trim-length``` option if you get an error. In order to determine the correct length to trim down to, take a look at the summary visualization generated above in order to select a length to trim back to that maintains the largest/acceptable quantity of reads. Finally, input that length in the deblur option ```--p-trim-length``` below and rerun the command.
+Note that you will need to trim all sequences to the same length with the ```--p-trim-length``` option if you get an error. In order to determine the correct length to trim down to, take a look at the summary visualization in order to select a length to trim back to that maintains the largest/acceptable quantity of reads. Finally, input that length in the deblur option ```--p-trim-length``` below and rerun the command.
 
 ```
 qiime deblur denoise-16S \
    --i-demultiplexed-seqs reads_qza/reads_trimmed_joined_filt.qza \
-   --p-trim-length 437 \
+   --p-trim-length 400 \
    --p-sample-stats \
    --p-jobs-to-start $NCORES \
    --p-min-reads 1 \

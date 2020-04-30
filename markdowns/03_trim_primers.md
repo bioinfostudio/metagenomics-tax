@@ -13,7 +13,7 @@ qiime cutadapt trim-paired \
    --o-trimmed-sequences reads_qza/reads_trimmed.qza
 ```
 
-If you received the error `--p-cores option requires an argument` make sure that you set the `NCORES` bash variable as described above.
+If you received the error `--p-cores option requires an argument` make sure that you set the `NCORES` bash variable.
 
 
 If using 16S V4/V5 primers, use these options in the above command: 

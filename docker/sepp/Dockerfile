@@ -1,8 +1,7 @@
-FROM gcr.io/wise-cycling-267806/tabulate
+FROM gcr.io/wise-cycling-267806/table-final
 USER root
-COPY deblur_table_final.qza deblur_output
-COPY rep_seqs_final.qza deblur_output
-COPY 16S rRNA_db/16S
+COPY asvs-tree.qza .
+COPY insertion-placements.qza .
 RUN chown -R bioinfo:bioinfo /home/bioinfo
 USER bioinfo
 WORKDIR /home/bioinfo/tax

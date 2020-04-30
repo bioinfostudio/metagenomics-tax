@@ -143,3 +143,11 @@ groups:
         prompt: |
 
             {% include "markdowns/15_build_tree_with_sepp.md" %}
+    -
+        type: TerminalQuestion
+        id: rarefaction
+        cid: sepp 
+        title: Generate rarefaction curves
+        prompt: |
+
+            {% include "markdowns/16_generate_rarefaction_curves.md" %}

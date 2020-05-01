@@ -2,7 +2,7 @@
 
 [ANCOM][12] is one method to test for differences in the relative abundance of features between sample groupings. It is a compositional approach that makes no assumptions about feature distributions. However, it requires that all features have non-zero abundances so a pseudocount first needs to be added (1 is a typical pseudocount choice):
 
-```
+```bash
 qiime composition add-pseudocount \
    --i-table deblur_output/deblur_table_final.qza \
    --p-pseudocount 1 \
@@ -11,7 +11,7 @@ qiime composition add-pseudocount \
 
 Then ANCOM can be run with this command; note that CATEGORY is a placeholder for the text label of your category of interest from the metadata file:
 
-```
+```bash
 qiime composition ancom \
    --i-table deblur_output/deblur_table_final_pseudocount.qza \
    --m-metadata-file $METADATA \

@@ -175,3 +175,11 @@ groups:
         prompt: |
 
             {% include "markdowns/19_identify_diff_abundant_features.md" %}
+    -
+        type: TerminalQuestion
+        id: exporting
+        cid: ancom
+        title: Exporting the final abundance, profile and sequence files
+        prompt: |
+
+            {% include "markdowns/20_export_final_abundance.md" %}

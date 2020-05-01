@@ -159,3 +159,11 @@ groups:
         prompt: |
 
             {% include "markdowns/16_generate_rarefaction_curves.md" %}
+    -
+        type: TerminalQuestion
+        id: ordination
+        cid: taxa-barplot 
+        title: Calculating diversity metrics and generating ordination plots
+        prompt: |
+
+            {% include "markdowns/18_calculating_diversity.md" %}

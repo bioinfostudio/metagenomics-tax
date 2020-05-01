@@ -151,3 +151,11 @@ groups:
         prompt: |
 
             {% include "markdowns/16_generate_rarefaction_curves.md" %}
+    -
+        type: TerminalQuestion
+        id: barchart
+        cid: rarefaction
+        title: Generate stacked barchart of taxa relative abundances
+        prompt: |
+
+            {% include "markdowns/16_generate_rarefaction_curves.md" %}

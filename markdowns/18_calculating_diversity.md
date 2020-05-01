@@ -1,6 +1,6 @@
 ## 8. Calculating diversity metrics and generating ordination plots
 
-Common alpha and beta-diversity metrics can be calculated with a single command in QIIME 2. In addition, ordination plots (such as PCoA plots for weighted UniFrac distances) will be generated automatically as well. This command will also rarefy all samples to the sample sequencing depth before calculating these metrics (`--p-sampling-depth` is a placeholder for the lowest _reasonable_ sample depth; samples with depth below this cut-off will be excluded).
+Common alpha and beta-diversity metrics can be calculated with a single command in QIIME 2. In addition, ordination plots (such as PCoA plots for weighted UniFrac distances) will be generated automatically as well. This command will also rarefy all samples to the sample sequencing depth before calculating these metrics (`--p-sampling-depth` is an option for the lowest _reasonable_ sample depth; samples with depth below this cut-off will be excluded).
 
 ```bash
 qiime diversity core-metrics-phylogenetic \

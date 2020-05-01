@@ -5,7 +5,8 @@ Visualize sequence quality across raw reads. This is important as a sanity check
 This is an important step for identifying outlier samples with especially low quality, read sizes, read depth, and other metrics.
 
 You can run FASTQC with this command (after creating the output directory).
-```
+
+```bash
 mkdir fastqc_out
 fastqc -t $NCORES raw_data/*.fastq.gz -o fastqc_out
 ```
@@ -14,7 +15,7 @@ If you receive the error `Value "FASTQ" invalid for option threads (number expec
 
 FASTQC generates a report for each individual file. To aggregate the summary files into a single report we can run MultiQC with these commands (including entering and leaving the FASTQC output directory):
 
-```
+```bash
 cd fastqc_out
 multiqc .
 ```
@@ -26,7 +27,7 @@ The full report is found within [multiqc_report.html](repo:results/multiqc_repor
 
 To standardize QIIME 2 analyses and to keep track of provenance (i.e. a list of what commands were previously run to produce a file) a special format is used for all QIIME 2 input and output files called an "artifact" (with the extension QZA). The first step is to import the raw reads as a QZA file.
 
-```
+```bash
 mkdir reads_qza
     
 qiime tools import \

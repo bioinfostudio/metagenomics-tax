@@ -2,7 +2,7 @@
 
 Screen out reads that do not begin with primer sequence and remove primer sequence from reads using the [cutadapt][4] QIIME 2 plugin. The below primers correspond to the 16S V6-V8 region (Bacteria-specific primer set).
 
-```
+```bash
 qiime cutadapt trim-paired \
    --i-demultiplexed-sequences reads_qza/reads.qza \
    --p-cores $NCORES \
@@ -45,7 +45,7 @@ If using Fungal ITS2 primers, use these options in the above command:
 
 You can run the `demux summarize` command after trimming the reads to get a report of the number of reads per sample and quality distribution across the reads. This generates a more basic output compared to FASTQC/MultiQC, but is sufficient for this step.
 
-```
+```bash
 qiime demux summarize \
    --i-data reads_qza/reads_trimmed.qza \
    --o-visualization reads_qza/reads_trimmed_summary.qzv

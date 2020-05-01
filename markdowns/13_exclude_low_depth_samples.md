@@ -4,15 +4,15 @@ Often certain samples will have quite low depth after these filtering steps, whi
 
 To perform this rarefaction curve analysis you would first need to summarize the filtered table we produced in the last step:
 
-```
+```bash
 qiime feature-table summarize \
    --i-table deblur_output/deblur_table_filt_contam.qza \
    --o-visualization deblur_output/deblur_table_filt_contam_summary.qzv
 ```
 
-From this table you need to determine the maximum depth across your samples. You can then generate the rarefaction curves with this command (where `X` is a placeholder for the max depth across samples).
+From this table you need to determine the maximum depth across your samples. You can then generate the rarefaction curves with this command (where `--p-max-depth` is an option for the max depth across samples).
 
-```
+```bash
 qiime diversity alpha-rarefaction \
    --i-table deblur_output/deblur_table_filt_contam.qza \
    --p-max-depth 15 \
@@ -20,9 +20,9 @@ qiime diversity alpha-rarefaction \
    --o-visualization rarefaction_curves_test.qzv
 ```
 
-Take a look at these curves to help decide on a minimum depth cut-off for retaining samples. Once you decide on a hard cut-off you can exclude samples below this cut-off with this command (where `SET_CUTOFF` is a placeholder for the minimum depth you select):
+Take a look at these curves to help decide on a minimum depth cut-off for retaining samples. Once you decide on a hard cut-off you can exclude samples below this cut-off with this command (where `--p-min-frequency` is an option for the minimum depth you select):
 
-```
+```bash
 qiime feature-table filter-samples \
    --i-table deblur_output/deblur_table_filt_contam.qza \
    --p-min-frequency 6 \

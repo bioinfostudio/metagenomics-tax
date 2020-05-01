@@ -4,7 +4,7 @@ Run the [deblur][5] workflow to correct reads and get amplicon sequence variants
 
 Note that you will need to trim all sequences to the same length with the ```--p-trim-length``` option if you get an error. In order to determine the correct length to trim down to, take a look at the summary visualization in order to select a length to trim back to that maintains the largest/acceptable quantity of reads. Finally, input that length in the deblur option ```--p-trim-length``` below and rerun the command.
 
-```
+```bash
 qiime deblur denoise-16S \
    --i-demultiplexed-seqs reads_qza/reads_trimmed_joined_filt.qza \
    --p-trim-length 400 \

@@ -1,7 +1,7 @@
-title: "Metagenomics QC"
+title: "Metagenomics Amplicon"
 description: |
 
-    # Data Quality Control
+    # Metagenomics Amplicon 
 
 rules:
     start:

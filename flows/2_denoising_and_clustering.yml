@@ -1,7 +1,7 @@
-title: "Metagenomics Amplicon"
+title: "Denoising and clustering"
 description: |
 
-    # Metagenomics Amplicon 
+    # Denoising and clustering
 
 rules:
     start:
@@ -19,7 +19,7 @@ rules:
     -
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
 
-    grade_identifier: metagenomics_tax 
+    grade_identifier: denoising_clustering 
     grade_aggregation_strategy: use_latest
 
     grading:
@@ -28,33 +28,9 @@ rules:
 
 groups:
 -
-    id: tax
+    id: asv
     shuffle: False
     pages:
-    -
-        type: TerminalQuestion
-        id: intro
-        cid: tax
-        title: Introduction
-        prompt: |
-
-            {% include "markdowns/01_introduction.md" %}
-    -
-        type: TerminalQuestion
-        id: inspect
-        cid: tax
-        title: Inspect read quality
-        prompt: |
-
-            {% include "markdowns/02_inspect_read_quality.md" %}
-    -
-        type: TerminalQuestion
-        id: trim
-        cid: multiqc
-        title: Trim primers with cutadapt
-        prompt: |
-
-            {% include "markdowns/03_trim_primers.md" %}
     -
         type: TerminalQuestion
         id: vsearch
@@ -135,51 +111,3 @@ groups:
         prompt: |
 
             {% include "markdowns/14_summarize_filtered_table.md" %}
-    -
-        type: TerminalQuestion
-        id: sepp
-        cid: table-final
-        title: Build tree with SEPP QIIME 2 plugin
-        prompt: |
-
-            {% include "markdowns/15_build_tree_with_sepp.md" %}
-    -
-        type: TerminalQuestion
-        id: rarefaction
-        cid: sepp 
-        title: Generate rarefaction curves
-        prompt: |
-
-            {% include "markdowns/16_generate_rarefaction_curves.md" %}
-    -
-        type: TerminalQuestion
-        id: barchart
-        cid: rarefaction
-        title: Generate stacked barchart of taxa relative abundances
-        prompt: |
-
-            {% include "markdowns/16_generate_rarefaction_curves.md" %}
-    -
-        type: TerminalQuestion
-        id: ordination
-        cid: taxa-barplot 
-        title: Calculating diversity metrics and generating ordination plots
-        prompt: |
-
-            {% include "markdowns/18_calculating_diversity.md" %}
-    -
-        type: TerminalQuestion
-        id: ancom
-        cid: diversity
-        title: Identifying differentially abundant features with ANCOM
-        prompt: |
-
-            {% include "markdowns/19_identify_diff_abundant_features.md" %}
-    -
-        type: TerminalQuestion
-        id: exporting
-        cid: ancom
-        title: Exporting the final abundance, profile and sequence files
-        prompt: |
-
-            {% include "markdowns/20_export_final_abundance.md" %}

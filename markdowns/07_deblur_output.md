@@ -2,7 +2,7 @@
 
 Once a denoising pipeline has been run you can summarize the output table with the below command, which will create a visualization artifact for you to view.
 
-```bash
+```
 qiime feature-table summarize \
    --i-table deblur_output/table.qza \
    --o-visualization deblur_output/deblur_table_summary.qzv

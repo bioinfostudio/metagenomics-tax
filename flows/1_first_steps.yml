@@ -167,3 +167,11 @@ groups:
         prompt: |
 
             {% include "markdowns/18_calculating_diversity.md" %}
+    -
+        type: TerminalQuestion
+        id: ancom
+        cid: diversity
+        title: Identifying differentially abundant features with ANCOM
+        prompt: |
+
+            {% include "markdowns/19_identify_diff_abundant_features.md" %}
